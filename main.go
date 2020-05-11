@@ -19,11 +19,12 @@ func list() {
 	}
 }
 
-func copyIgnore(language string) {
+func copyGitignore(language string) {
 	box := packr.NewBox("./templates")
 	template, err := box.Open(language + ".gitignore")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "no template found for: %s\n", language)
+		os.Exit(1)
 	}
 
 	to, err := os.OpenFile(".gitignore", os.O_RDWR|os.O_CREATE, 0666)
@@ -55,5 +56,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	copyIgnore(*language)
+	copyGitignore(*language)
 }
