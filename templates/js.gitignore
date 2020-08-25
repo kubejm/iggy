@@ -19,5 +19,5 @@ Thumbs.db
 build/**/*
 dist/**/*
 
-# ignore yarn.lock
+# Ignore yarn.lock
 yarn.lock
