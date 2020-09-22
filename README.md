@@ -2,7 +2,6 @@
 
 Generate gitignore files
 
-
 ## Usage
 
 ```
