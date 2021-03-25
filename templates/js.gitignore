@@ -10,6 +10,7 @@ node_modules
 # Editors
 .idea
 *.iml
+.vscode
 
 # OS metadata
 .DS_Store
@@ -21,3 +22,6 @@ dist/**/*
 
 # Ignore yarn.lock
 yarn.lock
+
+# svelte/sapper
+__sapper__
